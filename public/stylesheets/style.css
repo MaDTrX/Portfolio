@@ -1,0 +1,32 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white
+}
+
+a {
+  color: #00B7FF;
+}
+
+nav {
+  width: 100%;
+  background-color: rgb(125, 123, 123);
+  display: inline;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+}
+button {
+  width:40%;
+  margin: auto;
+}
+h3 {
+  text-align: center;
+}
+.project {
+  display: flex;
+}
