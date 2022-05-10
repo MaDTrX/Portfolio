@@ -3,103 +3,152 @@
   <head>
     <title><%=  %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e0c5b9ff9c.js" crossorigin="anonymous" defer></script>
   </head>
   <body>
-      <nav>
-        <a href="">About Me</a>
-        <a href="#projects">Project</a>
-        <a href="">Skills</a>
-        <a href="#contact">Contact</a>
-        <a href="">Resume</a>
-      </nav>
-    <main>
-      <div id="about">
-        <h1><%= title %></h1>
-        <p>I am a junior software engineer who loves to build new and exciting solutions for the organization that I am a part of.
-          My background in culinary arts and hospitality allows me to communicate, collaborate, and empathize well with
-          others, while prioritizing client/ user experiences</p>
-      </div>
-      <div id="skills">
-        <p>Python | JavaScript | MongoDB | PostgreSQL | Express.js | Node.js | Mongoose | Postman | Puppeteer.js</p>
-      </div>
-      <section id="projects">
-        <div class="project">
-        <div>
-          <img src="https://user-images.githubusercontent.com/99706973/164625300-71f569c9-f8b0-43d9-88b0-13cb4b197a48.png" width="700px" height="500px">
-        </div>
-        <div>
-          <h1>UP4GRUBZ</h1>
-          <p>This app was created with the mission to eliminate food waste in mind. Users can login to post their extra/about-to-expire food so other users can claim them. Everyone is welcome to browse a list of the posted grubs but they must be logged-in to post or claim grubs. The posts include a map with the pick-up location for the grubs. </p>
-          <h2>Technologies</h2>
-          <ul>
-            <li>Python</li>
-            <li>Django</li>
-            <li>AWS</li>
-            <li>PostgreSQL</li>
-            <li>JavaScript</li>
-            <li>Google Materialize</li>
-            <li>Google Places API</li>
-          </ul>
-            <a target="blank" href="https://github.com/MaDTrX/Up4Grubs"><img src="/images/github.png" width="50px" height="50px"></a>
-            <a target="blank" href="up4grubz.herokuapp.com"><img src="/images/website.png" width="50px" height="50px"></a>
-        </div>
-      </div>
-        <div class="project">
-        <div>
-          <img src="/images/checkers.png" width="700px" height="500px">
-        </div>
-        <div>
-          <h1>CHECKERS</h1>
-          <p>Checkers, also called draughts, board game, one of the world's oldest games. Checkers is played by two persons who oppose each other across a board of 64 light and dark squares, the same as a chessboard.</p>
-          <h2>Technologies:</h2>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Jquery</li>
-            <li>Socket</li>
-            <li>Express</li>
-          </ul>
-          <a target="blank" href="https://github.com/MaDTrX/Checkers"><img src="/images/github.png" width="50px" height="50px"></a>
-          <a target="blank" href="https://madtrx.github.io/Checkers/"><img src="/images/website.png" width="50px" height="50px"></a>
-        </div>
-      </div>
-        <div class="project">
+      <div class="container">
+        <nav>
+          <a href="#about">About Me</a>
+          <a href="#projects">Project</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <a href="#resume">Resume</a>
+        </nav>
+        <main>
+        <section id="about">
           <div>
-            <img src="/images/safetravels.png" width="700px" height="500px">
+            <h1><%= title %></h1>
+            <p>I am a junior software engineer who loves to build new and exciting solutions for the organization that I am a part of.
+              My background in culinary arts and hospitality allows me to communicate, collaborate, and empathize well with
+              others, while prioritizing client/ user experiences</p>
           </div>
+        </section>
+        <section id="skills">
           <div>
-            <h1>SAFE TRAVELS</h1>
-            <p>A traveling social app that lets you bookmark flights/hotels/experiences while staying with in the budget, and friends to you trip and split the cost.</p>
-          <h2>Technologies:</h2>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Express</li>
-            <li>Node.js</li>
-            <li>Amadeus API</li>
-            <li>Places API</li>
-          </ul>
-            <a target="blank" href="https://github.com/MaDTrX/Safe-Travels"><img src="/images/github.png" width="50px" height="50px"></a>
-            <a target="blank" href="https://safetravelsapp.herokuapp.com/"><img src="/images/website.png" width="50px" height="50px"></a>
+          <div class="skill">
+            <i class="fa-brands fa-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-node-js"></i>
+            <p>Node</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-css3"></i>
+            <p>CSS</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-sass"></i>
+            <p>SASS</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-bootstrap"></i>
+            <p>Bootstrap</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-python"></i>
+            <p>Python</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-github"></i>
+            <p>Github</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-aws"></i>
+            <p>Amazon web Services</p>
           </div>
         </div>
-        <div class="project"></div>
-      </section>
-      <div id="contact">
-        <h3>Contact</h3>
-        <a target="blank" class="contacts" href="https://github.com/MaDTrX"><img src="/images/github.png" width="50px" height="50px"></a>
-        <a target="blank" class="contacts" href="https://www.linkedin.com/in/marlin-makori-70821b133/"><img src="/images/linkedin.png" width="50px" height="50px"></a>
-        <form>
-          <label>Email:</label>
-          <input type="text" name="email">
-          <label>Message:</label>
-          <textarea type="text"></textarea>
-          <button>Send Email</button>
-        </form>
-      </div>
-      <div id="resume">
-      </div>
-    </main>
-    <footer>
-    </footer>
+        </section>
+        <section id="grubs">
+           <div>
+            <img src="https://user-images.githubusercontent.com/99706973/164625300-71f569c9-f8b0-43d9-88b0-13cb4b197a48.png" width="700px" height="500px">
+           </div>
+           <div class="info">
+            <h1>UP4GRUBZ</h1>
+            <p>This app was created with the mission to eliminate food waste in mind. Users can login to post their extra/about-to-expire food so other users can claim them. Everyone is welcome to browse a list of the posted grubs but they must be logged-in to post or claim grubs. The posts include a map with the pick-up location for the grubs. </p>
+            <h2>Technologies</h2>
+            <ul>
+              <li>Python</li>
+              <li>Django</li>
+              <li>AWS</li>
+              <li>PostgreSQL</li>
+              <li>JavaScript</li>
+              <li>Google Materialize</li>
+              <li>Google Places API</li>
+            </ul>
+              <a target="blank" href="https://github.com/MaDTrX/Up4Grubs"><img src="/images/github.png" width="50px" height="50px"></a>
+              <a target="blank" href="https://up4grubz.herokuapp.com"><img src="/images/website.png" width="50px" height="50px"></a>
+          </div>
+        </section>
+        <section id="checkers">
+           <div>
+            <img src="/images/checkers.png" width="700px" height="500px">
+           </div>
+           <div class="info">
+            <h1>CHECKERS</h1>
+            <p>Checkers, also called draughts, board game, one of the world's oldest games. Checkers is played by two persons who oppose each other across a board of 64 light and dark squares, the same as a chessboard.</p>
+            <h2>Technologies:</h2>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>Jquery</li>
+              <li>Socket</li>
+              <li>Express</li>
+            </ul>
+            <a target="blank" href="https://github.com/MaDTrX/Checkers"><img src="/images/github.png" width="50px" height="50px"></a>
+            <a target="blank" href="https://madtrx.github.io/Checkers/"><img src="/images/website.png" width="50px" height="50px"></a>
+           </div>
+          </section>
+          <section id="travels">
+            <div>
+              <img src="/images/safetravels.png" width="700px" height="500px">
+            </div>
+            <div class = "info">
+              <h1>SAFE TRAVELS</h1>
+              <p>A traveling social app that lets you bookmark flights/hotels/experiences while staying with in the budget, and friends to you trip and split the cost.</p>
+            <h2>Technologies:</h2>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Express</li>
+              <li>Node.js</li>
+              <li>Amadeus API</li>
+              <li>Places API</li>
+            </ul>
+              <a target="blank" href="https://github.com/MaDTrX/Safe-Travels"><img src="/images/github.png" width="50px" height="50px"></a>
+              <a target="blank" href="https://safetravelsapp.herokuapp.com/"><img src="/images/website.png" width="50px" height="50px"></a>
+            </div>
+        </section>
+        <section id="shorts"></section>
+        <section id="contact">
+          <h3>Contact</h3>
+          <a target="blank" class="contacts" href="https://github.com/MaDTrX"><img src="/images/github.png" width="50px" height="50px"></a>
+          <a target="blank" class="contacts" href="https://www.linkedin.com/in/marlin-makori-70821b133/"><img src="/images/linkedin.png" width="50px" height="50px"></a>
+          <form>
+            <label>Email:</label>
+            <input type="text" name="email">
+            <label>Message:</label>
+            <textarea type="text"></textarea>
+            <button>Send Email</button>
+          </form>
+        </section>
+        <section id="resume">
+          <button>View</button>
+          <button>Download</button>
+        </section>
+        </main>
+  </div>
   </body>
 </html>
