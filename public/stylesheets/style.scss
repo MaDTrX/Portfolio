@@ -4,15 +4,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  font: 17px;
-  color: white
+ 
+  color: white;
+ 
 }
+
 .container {
   width: 100%;
   height: 100%;
-  background-color: rgb(61, 61, 61);
+  background-color: rgb(4, 3, 3);
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overflow-x: hidden;
 
   scroll-behavior: smooth;
 
@@ -24,124 +27,329 @@ body {
     height: 100vh;
     scroll-snap-align: start;
     scroll-margin-top: 40px;
-   
+
 
     &:nth-of-type(1) {
-      background-image: url("../images/range.jpg");
+      background-image: url("../images/range.png");
       background-size: cover;
       background-repeat: no-repeat;
       align-items: flex-start;
-      margin-top : 180px;
+      margin-top: 180px;
 
-  }
+    }
+
     &:nth-of-type(2) {
-      background-color: rgb(62, 62, 62)
-  }
+      background-color: rgb(4, 3, 3)
+    }
+
     &:nth-of-type(3) {
-      background-color: rgb(61, 61, 61)
-  }
+      background-color: rgb(4, 3, 3)
+    }
+
     &:nth-of-type(4) {
-      background-color: rgb(62, 62, 62)
-  }
+      background-color: rgb(4, 3, 3)
+    }
+
     &:nth-of-type(5) {
-      background-color: rgb(61, 61, 61)
-  }
+      background-color: rgb(4, 3, 3)
+    }
+
     &:nth-of-type(6) {
-      background-color: rgb(62, 62, 62)
-  }
+      background-color: rgb(4, 3, 3)
+    }
+
     &:nth-of-type(7) {
-      background-color: rgb(61, 61, 61)
-  }
+      background-color: rgb(4, 3, 3)
+    }
+
     &:nth-of-type(8) {
-      background-color: rgb(62, 62, 62)
+      background-color: rgb(4, 3, 3)
+    }
   }
-  }
-  
+
 
 }
 
 
 a {
-  color: #ffffff;
-  margin-left: 10px;
+  color: rgb(161, 51, 51);
+  margin:auto;
   text-decoration: none;
 }
 
 nav {
   width: 100vw;
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(4, 3, 3);
   display: flex;
   justify-content: flex-end;
   align-items: center;
   position: fixed;
   top: 0;
-  height: 40px;
+  height: 60px;
+  z-index: 2;
+
 }
-form {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  margin: auto;
+
+#nav-contact {
+  margin-right: 20px;
 }
+
 button {
   width: 40%;
   margin: auto;
 }
-h3 {
+
+h3,
+h1 {
   text-align: center;
+  margin: 0;
 }
+
 .project {
   display: flex;
 }
+
 .info {
-  margin-left: 50px;
+
+  padding: 10px;
   box-shadow: 0 4px 11px 1px rgba(0, 0, 0, 0.459);
-  width: 30%
-}
-div > img {
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.397);
+  width: 50%;
+  height: 80%;
+  border-radius: 30px;
+  background: rgba(27, 27, 27, 0.444);
+  margin-left: -4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-i > span {
+div>img {
+  padding: 0;
+}
+
+i>span {
   font-size: large;
 }
-#skills > div {
+
+#skills>div {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   justify-content: center;
 }
-.skill > p {
+
+.skill>p {
   text-align: center;
   font-size: medium;
-  font-weight: 600;
-  font-style: oblique;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
   margin-top: 30px;
+  color: rgb(161, 51, 51)
 }
-i {
-	position: relative;
+
+ .icon {
+  position: relative;
   font-size: 75px;
-	transform: translateY(0);
-	transition: transform 1s;
-  margin: 10px;
+  margin: 15px;
 }
-i:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    height: 8px;
-    width: 100%;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.313);
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.222);
 
-    transform: translate(-50%, 0);
-    transition: transform 1s;
-}
-#about > div{
+
+#me {
+  margin-top: 20px;
+  background: rgba(27, 27, 27, 0.444);
   width: 40%;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.preview {
+  width: 50%;
+  margin-right: -4%;
+  z-Index: 1;
+}
+.preview > div {
+  width: 80%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  display: none;
+
+}
+
+.image>.laptop {
+  width: 70%;
+}
+
+.image>.phone {
+  width: 30%;
+}
+
+.image>div>#res {
+  margin-left: -225px;
+  margin-bottom: 19px;
+}
+
+.image>div>#nores {
+  margin-left: -740px;
+  margin-bottom: 50px;
+
+}
+.left {
+  transform: translateX(-50%);
+
+}
+
+.right {
+  transform: translateX(50%);
+
+}
+.left, .right {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0
+
+}
+.left.appear, .right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#desktop {
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+#mobile {
+  margin-bottom:20px;
+}
+
+.title, .stack, p {
+  width: 80%;
+  margin: 0 auto;
+}
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  width:100%
+}
+.link {
+  margin: 5px;
+  font-size:40px
+}
+.stack {
+ text-align: center;
+ padding-top: 10px;
+}
+
+.desc {
+  width: 65%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15%;
+  
+}
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.title > a {
+  font-size: 50px;
+  color: #04AA6D;
+  letter-spacing: 10px;
+}
+.title > a:hover {
+  color: rgb(202, 62, 71);
+}
+.title > h1 {
+  padding-bottom: 10px;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+.tech {
+  font-size: 50px;
+  margin: 10px;
+ 
 }
 
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 5px solid rgb(202, 62, 71);
+  background-color: rgb(74, 73, 73);
+  resize: vertical;
+  color: azure;
+  font-size: 14pt;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color:whitesmoke;
+}
+
+input[type=submit], button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover, button:hover {
+  background-color: rgb(202, 62, 71);
+}
+
+.form {
+  border-radius: 5px;
+  background-color: rgb(43, 43, 43);
+  padding: 20px;
+  width: 50%;
+}
+
+.col-25 {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(4, 3, 3, 0.051);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(161, 51, 51);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(209, 209, 209);
+}
