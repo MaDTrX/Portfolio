@@ -73,11 +73,9 @@ a {
   margin:auto;
   text-decoration: none;
 }
-.nav {
-  font-size: 25px;
-}
 
-nav {
+
+#navigation {
   width: 100vw;
   background-color: rgb(4, 3, 3);
   display: flex;
@@ -87,12 +85,33 @@ nav {
   top: 0;
   height: 60px;
   z-index: 2;
+  color: rgb(161, 51, 51);
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+#navigation > div {
+  width: 25%;
+  text-align:center;
 }
 
-#nav-contact {
-  margin-right: 20px;
+.dropdown {
+  position: relative;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 25%;
+  background-color: rgb(4, 3, 3);
+  width: 50%;
+  border:2px solid rgb(161, 51, 51);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
 button {
   width: 40%;
   margin: auto;
@@ -144,7 +163,7 @@ i>span {
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   margin-top: 30px;
-  color: rgb(161, 51, 51)
+  color: rgb(200, 200, 200)
 }
 
  .icon {

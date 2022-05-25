@@ -40,14 +40,44 @@
 
 <body>
   <div class="container">
-    <nav>
-      <a target="blank" class="contacts" href="https://www.linkedin.com/in/marlin-makori-70821b133/">LINKEDIN</i></a>
-      <a target="blank" class="contacts" href="https://github.com/MaDTrX">GITHUB</i></a>
-      <a target="blank" href="https://docs.google.com/document/d/e/2PACX-1vTSDvbispGn3HVy1HiNa_iFcovmRit6BT5Wz7BSQiQHxmQwu6JRUKNhEnslGVjVDw/pub">RESUME</a>
-      <a href="#skills">SKILLS</a>
-      <a id="nav-contact" href="#contact">CONTACT</a>
-      <a href="#projects">PROJECTS</a>
-    </nav>
+    <div id="navigation">
+      <div>
+        <a id="nav-contact" href="#contact">CONTACT</a>
+      </div>
+      <div>
+        <a href="#skills">SKILLS</a>
+      </div>
+      <div>
+      <a href="http://www.marlinkm.me/">M.K.M</a>
+      </div>
+      <div class="dropdown">
+        <span>PROJECTS</span> <i class="fa-solid fa-caret-down"></i>
+        <div class="dropdown-content">
+          <br>
+          <a href="#schedules">NCAA</a>
+          <br>
+          <a href="#safiri">SAFIRI</a>
+          <br>
+          <a href="#checkers">CHECKERS</a>
+          <br>
+          <a href="#grubs">UP4GRUBZ</a>
+          <br>
+        </div>
+      </div>
+      <div class="dropdown">
+        <span>REPERTOIRE</span> <i class="fa-solid fa-caret-down"></i>
+        <div class="dropdown-content">
+          <br>
+          <a target="blank" class="contacts" href="https://www.linkedin.com/in/marlin-makori-70821b133/">LINKEDIN</a>
+          <br>
+          <a target="blank" class="contacts" href="https://github.com/MaDTrX">GITHUB</a>
+          <br>
+          <a target="blank"
+            href="https://docs.google.com/document/d/e/2PACX-1vTSDvbispGn3HVy1HiNa_iFcovmRit6BT5Wz7BSQiQHxmQwu6JRUKNhEnslGVjVDw/pub">RESUME</a>
+            <br>
+        </div>
+      </div>
+    </div>
     <main>
       <section id="about">
         <div id="me">
@@ -126,14 +156,16 @@
           <div class="desc">
             <div class="title">
               <h1>NCAA SCHEDULES</h1>
-                  <a target="blank" href="https://github.com/MaDTrX/ncaaSchedules"><i class="fa-brands link fa-github"></i></a>
-    
-                  <a target="blank" href="https://ncaaschedules.herokuapp.com"><i class="fa-solid  link fa-link"></i></a>
+              <a target="blank" href="https://github.com/MaDTrX/ncaaSchedules"><i
+                  class="fa-brands link fa-github"></i></a>
+
+              <a target="blank" href="https://ncaaschedules.herokuapp.com"><i class="fa-solid  link fa-link"></i></a>
             </div>
-            <p class="details">This app was created with the goal of hosting all college sports schedules. 
-              To accomplish this, i created ncaaSchedules API. 
-              The REST API gets data for 2 sources sportsdataio APi and by scraping the web. 
-              It then aggregates and sorts the gathered information and stores them into a MongoDB updating the data at set intervals.  </p>
+            <p class="details">This app was created with the goal of hosting all college sports schedules.
+              To accomplish this, i created ncaaSchedules API.
+              The REST API gets data for 2 sources sportsdataio APi and by scraping the web.
+              It then aggregates and sorts the gathered information and stores them into a MongoDB updating the data at
+              set intervals. </p>
             <div class="stack">
               <i class="fa-brands tech fa-react"></i>
               <i class="fa-brands tech fa-node-js"></i>
@@ -168,12 +200,14 @@
           <div class="desc">
             <div class="title">
               <h1>SAFIRI</h1>
-                  <a target="blank" href="https://github.com/MaDTrX/safe-travels"><i class="fa-brands link fa-github"></i></a>
-    
-                  <a target="blank" href="https://safetravelsapp.herokuapp.com"><i class="fa-solid  link fa-link"></i></a>
+              <a target="blank" href="https://github.com/MaDTrX/safe-travels"><i
+                  class="fa-brands link fa-github"></i></a>
+
+              <a target="blank" href="https://safetravelsapp.herokuapp.com"><i class="fa-solid  link fa-link"></i></a>
             </div>
-            <p class="details">A traveling companion the allows users to plan their trip with ease all in one app. 
-              From checklist to flight itenaries, hotel bookings, and trip budget planner, this app lets you stay worry free throughout your adventures. 
+            <p class="details">A traveling companion the allows users to plan their trip with ease all in one app.
+              From checklist to flight itenaries, hotel bookings, and trip budget planner, this app lets you stay worry
+              free throughout your adventures.
               Powered by AMADEUS API & GOOGLE PLACES API </p>
             <div class="stack">
               <i class="fa-brands tech fa-bootstrap"></i>
@@ -183,7 +217,7 @@
           </div>
         </div>
       </section>
-      <section id="schedules">
+      <section id="checkers">
         <div class="image">
           <div class="laptop">
             <img src="/images/laptop.png" width="830px" height="490px">
@@ -209,12 +243,12 @@
           <div class="desc">
             <div class="title">
               <h1>CHECKERS</h1>
-                  <a target="blank" href="https://github.com/MaDTrX/checkers"><i class="fa-brands link fa-github"></i></a>
-    
-                  <a target="blank" href="https://madtrx.github.io/Checkers/"><i class="fa-solid  link fa-link"></i></a>
+              <a target="blank" href="https://github.com/MaDTrX/checkers"><i class="fa-brands link fa-github"></i></a>
+
+              <a target="blank" href="https://madtrx.github.io/Checkers/"><i class="fa-solid  link fa-link"></i></a>
             </div>
-            <p class="details">An online version of the classic game of checkers built using Socket.io. 
-              The game also implements a chat functionality for users to chat while playing against each other. 
+            <p class="details">An online version of the classic game of checkers built using Socket.io.
+              The game also implements a chat functionality for users to chat while playing against each other.
               The website also features local player vs. player. </p>
             <div class="stack">
               <i class="fa-brands tech fa-html5"></i>
@@ -224,7 +258,7 @@
           </div>
         </div>
       </section>
-      <section id="schedules">
+      <section id="grubs">
         <div class="image">
           <div class="laptop">
             <img src="/images/laptop.png" width="830px" height="490px">
@@ -250,15 +284,17 @@
           <div class="desc">
             <div class="title">
               <h1>UP4GRUBZ</h1>
-                  <a target="blank" href="https://github.com/MaDTrX/Up4Grubs"><i class="fa-brands link fa-github"></i></a>
-    
-                  <a target="blank" href="https://up4grubz.herokuapp.com"><i class="fa-solid  link fa-link"></i></a>
+              <a target="blank" href="https://github.com/MaDTrX/Up4Grubs"><i class="fa-brands link fa-github"></i></a>
+
+              <a target="blank" href="https://up4grubz.herokuapp.com"><i class="fa-solid  link fa-link"></i></a>
             </div>
-            <p class="details">This full CRUD app was created with the mission to eliminate food waste in mind. Users can login to post their
+            <p class="details">This full CRUD app was created with the mission to eliminate food waste in mind. Users
+              can login to post their
               extra/about-to-expire food so other users can claim them. Everyone is welcome to browse a list of the
-              posted grubs but they must be logged-in to post or claim grubs. 
-              The app utilizes the google places markers API to display a map with the location to pick up a posted grub. 
-              It allows users to add and delete multiple photos of posted grubs. 
+              posted grubs but they must be logged-in to post or claim grubs.
+              The app utilizes the google places markers API to display a map with the location to pick up a posted
+              grub.
+              It allows users to add and delete multiple photos of posted grubs.
               Photos are stored and deleted in S3 buckets based on user activity</p>
             <div class="stack">
               <i class="fa-brands fa-aws tech"></i>
