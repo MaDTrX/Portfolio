@@ -78,6 +78,10 @@ a {
   text-decoration: none;
 }
 
+.nav {
+  font-size: 25px;
+}
+
 nav {
   width: 100vw;
   background-color: #040303;
