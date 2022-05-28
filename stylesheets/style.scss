@@ -1,12 +1,11 @@
+$smmd: 900px;
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
- 
   color: white;
- 
 }
 
 .container {
@@ -33,8 +32,10 @@ body {
       background-image: url("../images/range.png");
       background-size: cover;
       background-repeat: no-repeat;
-      align-items: flex-start;
       margin-top: 180px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;;
 
     }
 
@@ -88,10 +89,25 @@ a {
   color: rgb(161, 51, 51);
   letter-spacing: 2px;
   font-weight: 600;
+  @media only screen and (max-width: $smmd) {
+    display: none;
+  }
 }
 #navigation > div {
   width: 25%;
   text-align:center;
+}
+#hamburger {
+  z-index: 1;
+  @media only screen and (max-width: $smmd) {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  z-index: 2;
+  font-size: 25px;
+  color:rgb(161, 51, 51)
+    
+  }
 }
 
 .dropdown {
@@ -113,15 +129,32 @@ a {
   flex-direction: column;
 }
 button {
-  width: 40%;
-  margin: auto;
+  width: 40%;  
+  font-size: 16px;
+  letter-spacing: .5px;
+  
+}
+button > i {
+  padding-left: 10px;
+  font-size: 18px;
+  color: black;
 }
 
 h3,
 h1 {
   text-align: center;
-  margin: 0;
   letter-spacing: 5px;
+}
+#landing {
+  width:50%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+ 
+}
+#landing > button {
+  width: 30%;
+  margin: 5px;
 }
 
 .project {
@@ -174,10 +207,9 @@ i>span {
 
 
 #me {
-  margin-top: 20px;
+  margin-top: 25px;
   width: 50%;
-  padding: 30px;
-  border-radius: 30px;
+  border-bottom: 2px solid rgb(161, 51, 51);
 }
 
 .preview {
@@ -313,12 +345,13 @@ label {
 
 input[type=submit], button {
   background-color: #04AA6D;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   float: right;
+  font-weight: 600;
 }
 
 input[type=submit]:hover, button:hover {
@@ -350,7 +383,6 @@ input[type=submit]:hover, button:hover {
   display: table;
   clear: both;
 }
-
 
 ::-webkit-scrollbar {
   width: 20px;
