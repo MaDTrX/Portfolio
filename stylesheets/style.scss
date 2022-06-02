@@ -1,4 +1,5 @@
 $smmd: 900px;
+
 body {
   width: 100vw;
   height: 100vh;
@@ -6,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 .container {
@@ -35,7 +37,8 @@ body {
       margin-top: 180px;
       display: flex;
       justify-content: flex-start;
-      flex-direction: column;;
+      flex-direction: column;
+      ;
 
     }
 
@@ -71,10 +74,9 @@ body {
 
 a {
   color: rgb(161, 51, 51);
-  margin:auto;
+  margin: auto;
   text-decoration: none;
 }
-
 
 #navigation {
   width: 100vw;
@@ -89,26 +91,71 @@ a {
   color: rgb(161, 51, 51);
   letter-spacing: 2px;
   font-weight: 600;
+
   @media only screen and (max-width: $smmd) {
     display: none;
   }
 }
-#navigation > div {
-  width: 25%;
-  text-align:center;
-}
-#hamburger {
-  z-index: 1;
+
+#open {
+  display: none;
+
   @media only screen and (max-width: $smmd) {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 2;
+    font-size: 25px;
+    color: rgb(161, 51, 51)
+  }
+}
+
+#close {
+  font-size: 30px;
+  display: none;
   position: absolute;
   top: 20px;
   right: 25px;
-  z-index: 2;
-  font-size: 25px;
-  color:rgb(161, 51, 51)
-    
+  z-index: 3;
+  color: rgb(161, 51, 51);
+
+  @media only screen and (min-width: $smmd) {
+    opacity: 0;
   }
 }
+
+#mobile-nav {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  background: rgba(220, 220, 220, 0.938);
+  opacity: 0;
+  z-index: 2;
+  border-left: 2px solid rgb(161, 51, 51);
+
+}
+
+#mobile-nav.responsive {
+  right: 0;
+  transform: translateX(0);
+  opacity: 1;
+
+  @media only screen and (min-width: $smmd) {
+    opacity: 0;
+  }
+}
+
+#navigation>div {
+  width: 25%;
+  text-align: center;
+}
+
 
 .dropdown {
   position: relative;
@@ -120,7 +167,7 @@ a {
   left: 25%;
   background-color: rgb(4, 3, 3);
   width: 50%;
-  border:2px solid rgb(161, 51, 51);
+  border: 2px solid rgb(161, 51, 51);
   z-index: 1;
 }
 
@@ -128,13 +175,15 @@ a {
   display: flex;
   flex-direction: column;
 }
+
 button {
-  width: 40%;  
+  width: 40%;
   font-size: 16px;
   letter-spacing: .5px;
-  
+
 }
-button > i {
+
+button>i {
   padding-left: 10px;
   font-size: 18px;
   color: black;
@@ -145,14 +194,31 @@ h1 {
   text-align: center;
   letter-spacing: 5px;
 }
+
+h4 {
+  color: black;
+  margin: 5px 0 0 0;
+  padding-bottom: 0;
+  letter-spacing: 5px;
+
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(161, 51, 51)
+}
+
 #landing {
-  width:50%;
+  width: 50%;
   margin-top: 15px;
   display: flex;
   justify-content: center;
- 
+
 }
-#landing > button {
+
+#landing>button {
   width: 30%;
   margin: 5px;
 }
@@ -199,7 +265,7 @@ i>span {
   color: rgb(200, 200, 200)
 }
 
- .icon {
+.icon {
   position: relative;
   font-size: 75px;
   margin: 15px;
@@ -217,7 +283,8 @@ i>span {
   margin-right: -4%;
   z-Index: 1;
 }
-.preview > div {
+
+.preview>div {
   width: 80%;
 }
 
@@ -246,6 +313,7 @@ i>span {
   margin-bottom: 50px;
 
 }
+
 .left {
   transform: translateX(-50%);
 
@@ -255,12 +323,15 @@ i>span {
   transform: translateX(50%);
 
 }
-.left, .right {
+
+.left,
+.right {
   transition: opacity 250ms ease-in, transform 400ms ease-in;
   opacity: 0
-
 }
-.left.appear, .right.appear {
+
+.left.appear,
+.right.appear {
   transform: translateX(0);
   opacity: 1;
 }
@@ -271,26 +342,32 @@ i>span {
   margin-left: 10px;
 
 }
+
 #mobile {
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
-.title, .stack, p {
+.title,
+.stack,
+p {
   width: 80%;
   margin: 0 auto;
 }
+
 p {
   font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
-  width:100%
+  width: 100%
 }
+
 .link {
   margin: 5px;
-  font-size:40px
+  font-size: 40px
 }
+
 .stack {
- text-align: center;
- padding-top: 10px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .desc {
@@ -307,26 +384,31 @@ p {
   text-align: center;
 }
 
-.title > a {
+.title>a {
   font-size: 50px;
   color: #04AA6D;
   letter-spacing: 10px;
 }
-.title > a:hover {
+
+.title>a:hover {
   color: rgb(202, 62, 71);
 }
-.title > h1 {
+
+.title>h1 {
   padding-bottom: 10px;
   font-size: 30px;
   letter-spacing: 5px;
 }
+
 .tech {
   font-size: 50px;
   margin: 10px;
 }
 
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: none;
@@ -340,10 +422,11 @@ input[type=text], select, textarea {
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
-  color:whitesmoke;
+  color: whitesmoke;
 }
 
-input[type=submit], button {
+input[type=submit],
+button {
   background-color: #04AA6D;
   color: rgb(0, 0, 0);
   padding: 12px 20px;
@@ -354,7 +437,8 @@ input[type=submit], button {
   font-weight: 600;
 }
 
-input[type=submit]:hover, button:hover {
+input[type=submit]:hover,
+button:hover {
   background-color: rgb(202, 62, 71);
 }
 
@@ -376,6 +460,9 @@ input[type=submit]:hover, button:hover {
   width: 75%;
   margin-top: 6px;
 }
+
+
+
 
 /* Clear floats after the columns */
 .row:after {
