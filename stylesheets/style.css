@@ -235,8 +235,7 @@ a {
 }
 
 button {
-  width: 40%;
-  font-size: 1rem;
+  font-size: 12px;
   letter-spacing: .5px;
 }
 
@@ -267,7 +266,7 @@ hr {
 }
 
 #landing {
-  width: 50%;
+  width: 100%;
   margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,7 +277,6 @@ hr {
 }
 
 #landing > button {
-  width: 30%;
   margin: 5px;
 }
 
@@ -358,6 +356,13 @@ i > span {
   border-bottom: 2px solid #a13333;
 }
 
+@media only screen and (max-width: 900px) {
+  #me {
+    width: 80%;
+    margin-top: 40px;
+  }
+}
+
 .preview {
   width: 50%;
   margin-right: -4%;
@@ -374,6 +379,29 @@ i > span {
 
 .preview > div {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .preview > div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .preview > div > button {
+    width: 50%;
+    margin-right: -15%;
+  }
 }
 
 .image {
@@ -406,16 +434,6 @@ i > span {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   opacity: 1;
-}
-
-#desktop {
-  margin-bottom: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-#mobile {
-  margin-bottom: 20px;
 }
 
 .title,
