@@ -206,6 +206,11 @@ h1 {
   text-align: center;
   letter-spacing: 5px;
 }
+h1 {
+  @media only screen and (max-width: $smmd) {
+    letter-spacing: 0;
+  }
+}
 
 
 h4 {
