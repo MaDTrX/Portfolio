@@ -25,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 120px);
     scroll-snap-align: start;
     scroll-margin-top: 60px;
     @media only screen and (max-width: $smmd) {
