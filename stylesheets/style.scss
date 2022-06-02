@@ -17,17 +17,24 @@ body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   overflow-x: hidden;
-
   scroll-behavior: smooth;
-
+  
   section {
+    z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 60px);
     scroll-snap-align: start;
-    scroll-margin-top: 40px;
+    scroll-margin-top: 60px;
+    @media only screen and (max-width: $smmd) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      scroll-margin-top: 60px;
+    }
 
 
     &:nth-of-type(1) {
@@ -87,7 +94,7 @@ a {
   position: fixed;
   top: 0;
   height: 60px;
-  z-index: 2;
+  z-index: 1;
   color: rgb(161, 51, 51);
   letter-spacing: 2px;
   font-weight: 600;
@@ -97,26 +104,27 @@ a {
   }
 }
 
+
 #open {
   display: none;
-
   @media only screen and (max-width: $smmd) {
     display: flex;
     position: absolute;
     top: 20px;
-    right: 25px;
-    z-index: 2;
+    right: 35px;
+    // z-index: 1;
     font-size: 25px;
     color: rgb(161, 51, 51)
   }
 }
 
+
 #close {
   font-size: 30px;
   display: none;
   position: absolute;
-  top: 20px;
-  right: 25px;
+  top: 10px;
+  right: 15px;
   z-index: 3;
   color: rgb(161, 51, 51);
 
@@ -150,12 +158,19 @@ a {
     opacity: 0;
   }
 }
+#hamburger {
+  width: 100vw;
+  height: 60px;
+  background-color: rgb(4, 3, 3);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
 
-#navigation>div {
+#navigation > div {
   width: 25%;
   text-align: center;
 }
-
 
 .dropdown {
   position: relative;
@@ -168,7 +183,7 @@ a {
   background-color: rgb(4, 3, 3);
   width: 50%;
   border: 2px solid rgb(161, 51, 51);
-  z-index: 1;
+  // z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -178,14 +193,13 @@ a {
 
 button {
   width: 40%;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: .5px;
-
 }
 
-button>i {
+button > i {
   padding-left: 10px;
-  font-size: 18px;
+  font-size: 1rem;
   color: black;
 }
 
@@ -218,7 +232,7 @@ hr {
 
 }
 
-#landing>button {
+#landing > button {
   width: 30%;
   margin: 5px;
 }
@@ -228,7 +242,6 @@ hr {
 }
 
 .info {
-
   padding: 10px;
   box-shadow: 0 4px 11px 1px rgba(0, 0, 0, 0.459);
   width: 50%;
@@ -239,26 +252,33 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: $smmd) {
+    width: 80%;
+    height: auto;
+    margin-bottom: 4%; 
+    margin-left: 0;
+    
+}
 }
 
-div>img {
+div > img {
   padding: 0;
 }
 
-i>span {
-  font-size: large;
+i > span {
+  font-size: 1rem;
 }
 
-#skills>div {
+#skills > div {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
 }
 
-.skill>p {
+.skill > p {
   text-align: center;
-  font-size: medium;
+  font-size: 1rem;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   margin-top: 30px;
@@ -267,7 +287,7 @@ i>span {
 
 .icon {
   position: relative;
-  font-size: 75px;
+  font-size: 3rem;
   margin: 15px;
 }
 
@@ -282,9 +302,16 @@ i>span {
   width: 50%;
   margin-right: -4%;
   z-Index: 1;
+  @media only screen and (max-width: $smmd) {
+    width: 80%;
+    margin-top: 4%;
+    margin-right: 0;
+
+  }
+  
 }
 
-.preview>div {
+.preview > div {
   width: 80%;
 }
 
@@ -295,24 +322,24 @@ i>span {
 
 }
 
-.image>.laptop {
-  width: 70%;
-}
+// .image > .laptop {
+//   width: 70%;
+// }
 
-.image>.phone {
-  width: 30%;
-}
+// .image > .phone {
+//   width: 30%;
+// }
 
-.image>div>#res {
-  margin-left: -225px;
-  margin-bottom: 19px;
-}
+// .image > div > #res {
+//   margin-left: -225px;
+//   margin-bottom: 19px;
+// }
 
-.image>div>#nores {
-  margin-left: -740px;
-  margin-bottom: 50px;
+// .image > div > #nores {
+//   margin-left: -740px;
+//   margin-bottom: 50px;
 
-}
+// }
 
 .left {
   transform: translateX(-50%);
@@ -356,13 +383,16 @@ p {
 
 p {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
-  width: 100%
+  font-size: 1rem;
+  width: 100%;
+  @media only screen and (max-width: $smmd) {
+    font-size: 14px;
+  }
 }
 
 .link {
   margin: 5px;
-  font-size: 40px
+  font-size: 2rem
 }
 
 .stack {
@@ -377,6 +407,11 @@ p {
   flex-direction: column;
   justify-content: center;
   margin-left: 15%;
+  @media only screen and (max-width: $smmd) {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+  }
 }
 
 .title {
@@ -384,25 +419,33 @@ p {
   text-align: center;
 }
 
-.title>a {
-  font-size: 50px;
+.title > a {
+  font-size: 3rem;
   color: #04AA6D;
   letter-spacing: 10px;
+  @media only screen and (max-width: $smmd) {
+    font-size: 2rem;
+  }
 }
 
-.title>a:hover {
+.title > a:hover {
   color: rgb(202, 62, 71);
 }
 
-.title>h1 {
-  padding-bottom: 10px;
-  font-size: 30px;
+.title > h1 {
+  font-size: 2rem;
   letter-spacing: 5px;
+  @media only screen and (max-width: $smmd) {
+    font-size: 1.5rem;
+  }
 }
 
 .tech {
-  font-size: 50px;
+  font-size: 3rem;
   margin: 10px;
+  @media only screen and (max-width: $smmd) {
+    font-size: 2rem;
+  }
 }
 
 
@@ -416,7 +459,7 @@ textarea {
   background-color: rgb(74, 73, 73);
   resize: vertical;
   color: azure;
-  font-size: 14pt;
+  font-size: 1rem;
 }
 
 label {
@@ -447,6 +490,10 @@ button:hover {
   background-color: rgb(43, 43, 43);
   padding: 20px;
   width: 50%;
+  @media only screen and (max-width: $smmd) {
+    width: 80%;
+    
+  }
 }
 
 .col-25 {
@@ -461,9 +508,6 @@ button:hover {
   margin-top: 6px;
 }
 
-
-
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -473,6 +517,9 @@ button:hover {
 
 ::-webkit-scrollbar {
   width: 20px;
+  @media only screen and (max-width: $smmd) {
+    width: 0;
+  }
 }
 
 /* Track */
