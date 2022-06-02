@@ -41,7 +41,32 @@
 
 <body>
   <div class="container">
-    <div id='hamburger'><i class="fa-solid fa-bars"></i></div>
+    <div id='hamburger'>
+      <i id="open" class="fa-solid fa-bars"></i>
+      <i id="close" class="fa-solid fa-xmark"></i>
+    </div>
+    <div id="mobile-nav">
+
+      <a id="nav-contact" href="#contact">CONTACT</a>
+      <a href="#skills">SKILLS</a>
+
+      <hr>
+      <h4>PROJECTS</h4>
+
+      <a href="#safiri">SAFIRI</a>
+
+      <a href="#checkers">CHECKERS</a>
+
+      <a href="#grubs">UP4GRUBZ</a>
+
+      <hr>
+      <h4>REPERTOIRE</h4>
+
+      <a target="_blank" class="contacts" href="https://www.linkedin.com/in/marlin-makori-70821b133/">LINKEDIN</a>
+
+      <a target="_blank" class="contacts" href="https://github.com/MaDTrX">GITHUB</a>
+    </div>
+
     <div id="navigation">
       <div>
         <a id="nav-contact" href="#contact">CONTACT</a>
@@ -50,7 +75,7 @@
         <a href="#skills">SKILLS</a>
       </div>
       <div>
-      <a href="http://www.marlinkm.me/"><img src="images/logo.gif"></a>
+        <a href="http://www.marlinkm.me/"><img src="images/logo.gif"></a>
       </div>
       <div class="dropdown">
         <span>PROJECTS</span> <i class="fa-solid fa-caret-down"></i>
@@ -75,273 +100,276 @@
           <a target="_blank" class="contacts" href="https://github.com/MaDTrX">GITHUB</a>
           <br>
           <a target="_blank"
-            href="https://docs.google.com/document/d/e/2PACX-1vTSDvbispGn3HVy1HiNa_iFcovmRit6BT5Wz7BSQiQHxmQwu6JRUKNhEnslGVjVDw/pub"> VIEW RESUME</a>
-            <br>
+            href="https://docs.google.com/document/d/e/2PACX-1vTSDvbispGn3HVy1HiNa_iFcovmRit6BT5Wz7BSQiQHxmQwu6JRUKNhEnslGVjVDw/pub">
+            VIEW RESUME</a>
+          <br>
         </div>
       </div>
-    </div>
-    <main>
-      <section id="about">
-        <div id="me">
-          <h1>
-           Marlin Makori | Full Stack Developer
-          </h1>
+      </div>
+    
+  <main>
+    <section id="about">
+      <div id="me">
+        <h1>
+          Marlin Makori | Full Stack Developer
+        </h1>
+      </div>
+      <!-- <div id="landing"><button>ABOUT ME <i class="fa-solid fa-user-tie"></i></button> <button>RESUME <i class="fa-solid fa-download"></i></button></div> -->
+    </section>
+    <section id="skills">
+      <div>
+        <div class="skill">
+          <i class="fa-brands icon fa-js"></i>
+          <p>JavaScript</p>
         </div>
-        <!-- <div id="landing"><button>ABOUT ME <i class="fa-solid fa-user-tie"></i></button> <button>RESUME <i class="fa-solid fa-download"></i></button></div> -->
-      </section>
-      <section id="skills">
-        <div>
-          <div class="skill">
-            <i class="fa-brands icon fa-js"></i>
-            <p>JavaScript</p>
-          </div>
-          <div class="skill">
-            <i class="fa-brands icon fa-html5"></i>
-            <p>HTML</p>
-          </div>
-          <div class="skill">
-            <i class="fa-brands icon fa-node-js"></i>
-            <p>Node</p>
-          </div>
-          <div class="skill">
-            <i class="fa-brands icon fa-css3"></i>
-            <p>CSS</p>
-          </div>
-          <div class="skill">
-            <i class="fa-brands icon fa-sass"></i>
-            <p>SASS</p>
-          </div>
-          <div class="skill">
-            <i class="fa-brands icon fa-react"></i>
-            <p>React</p>
-          </div>
-          <div class="skill">
-            <i class="fa-brands icon fa-bootstrap"></i>
-            <p>Bootstrap</p>
-          </div>
-          <div class="skill">
-            <i class="fa-brands icon fa-python"></i>
-            <p>Python</p>
-          </div>
-          <div class="skill">
-            <i class="fa-brands icon fa-github"></i>
-            <p>Github</p>
-          </div>
-          <div class="skill">
-            <i class="fa-brands icon fa-aws"></i>
-            <p>AWS</p>
-          </div>
+        <div class="skill">
+          <i class="fa-brands icon fa-html5"></i>
+          <p>HTML</p>
         </div>
-      </section>
-      <section id="schedules">
-        <div class="image">
-          <div class="laptop">
-            <img src="images/laptop.png" width="830px" height="490px">
-            <video id="nores" width="640" height="400" controls>
-              <source src="images/ncaa.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="phone">
-            <img src="images/phone.png" width="195px" height="438px">
-            <video id="res" width="244" height="400" controls>
-              <source src="images/demo.mp4" type="video/mp4">
-            </video>
-          </div>
+        <div class="skill">
+          <i class="fa-brands icon fa-node-js"></i>
+          <p>Node</p>
         </div>
-        <div class="preview left slide">
-          <!-- <div>
+        <div class="skill">
+          <i class="fa-brands icon fa-css3"></i>
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <i class="fa-brands icon fa-sass"></i>
+          <p>SASS</p>
+        </div>
+        <div class="skill">
+          <i class="fa-brands icon fa-react"></i>
+          <p>React</p>
+        </div>
+        <div class="skill">
+          <i class="fa-brands icon fa-bootstrap"></i>
+          <p>Bootstrap</p>
+        </div>
+        <div class="skill">
+          <i class="fa-brands icon fa-python"></i>
+          <p>Python</p>
+        </div>
+        <div class="skill">
+          <i class="fa-brands icon fa-github"></i>
+          <p>Github</p>
+        </div>
+        <div class="skill">
+          <i class="fa-brands icon fa-aws"></i>
+          <p>AWS</p>
+        </div>
+      </div>
+    </section>
+    <section id="schedules">
+      <div class="image">
+        <div class="laptop">
+          <img src="images/laptop.png" width="830px" height="490px">
+          <video id="nores" width="640" height="400" controls>
+            <source src="images/ncaa.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="phone">
+          <img src="images/phone.png" width="195px" height="438px">
+          <video id="res" width="244" height="400" controls>
+            <source src="images/demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="preview left slide">
+        <!-- <div>
             <button  id="mobile">MOBILE DEMO</button>
             <button id="desktop">DESKTOP DEMO</button>
           </div> -->
-          <img src="images/ncaa.png" width="100%">
-        </div>
-        <div class="info right slide">
-          <div class="desc">
-            <div class="title">
-              <h1>NCAA SCHEDULES</h1>
-              <a target="_blank" href="https://github.com/MaDTrX/ncaaSchedules"><i
-                  class="fa-brands link fa-github"></i></a>
+        <img src="images/ncaa.png" width="100%">
+      </div>
+      <div class="info right slide">
+        <div class="desc">
+          <div class="title">
+            <h1>NCAA SCHEDULES</h1>
+            <a target="_blank" href="https://github.com/MaDTrX/ncaaSchedules"><i
+                class="fa-brands link fa-github"></i></a>
 
-              <a target="_blank" href="https://ncaaschedules.herokuapp.com"><i class="fa-solid  link fa-link"></i></a>
-            </div>
-            <p class="details">This app was created with the goal of hosting all college sports schedules.
-              To accomplish this, I created ncaaSchedules API.
-              The REST API gets data from SportsDataIO API and by scraping the web.
-              It then aggregates, sorts the gathered information, and stores them into a MongoDB updating the data at
-              set intervals. </p>
-            <div class="stack">
-              <i class="fa-brands tech fa-react"></i>
-              <i class="fa-brands tech fa-node-js"></i>
-              <i class="fa-brands tech fa-js"></i>
-            </div>
+            <a target="_blank" href="https://ncaaschedules.herokuapp.com"><i class="fa-solid  link fa-link"></i></a>
+          </div>
+          <p class="details">This app was created with the goal of hosting all college sports schedules.
+            To accomplish this, I created ncaaSchedules API.
+            The REST API gets data from SportsDataIO API and by scraping the web.
+            It then aggregates, sorts the gathered information, and stores them into a MongoDB updating the data at
+            set intervals. </p>
+          <div class="stack">
+            <i class="fa-brands tech fa-react"></i>
+            <i class="fa-brands tech fa-node-js"></i>
+            <i class="fa-brands tech fa-js"></i>
           </div>
         </div>
-      </section>
-      <section id="safiri">
-        <div class="image">
-          <div class="laptop">
-            <img src="images/laptop.png" width="830px" height="490px">
-            <video id="nores" width="640" height="400" controls>
-              <source src="images/ncaa.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="phone">
-            <img src="images/phone.png" width="195px" height="438px">
-            <video id="res" width="244" height="400" controls>
-              <source src="images/demo.mp4" type="video/mp4">
-            </video>
-          </div>
+      </div>
+    </section>
+    <section id="safiri">
+      <div class="image">
+        <div class="laptop">
+          <img src="images/laptop.png" width="830px" height="490px">
+          <video id="nores" width="640" height="400" controls>
+            <source src="images/ncaa.mp4" type="video/mp4">
+          </video>
         </div>
-        <div class="preview left slide">
-          <!-- <div>
+        <div class="phone">
+          <img src="images/phone.png" width="195px" height="438px">
+          <video id="res" width="244" height="400" controls>
+            <source src="images/demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="preview left slide">
+        <!-- <div>
             <button  id="mobile">MOBILE DEMO</button>
             <button id="desktop">DESKTOP DEMO</button>
           </div> -->
-          <img src="images/safiri.png" width="100%">
-        </div>
-        <div class="info right slide">
-          <div class="desc">
-            <div class="title">
-              <h1>SAFIRI</h1>
-              <a target="_blank" href="https://github.com/MaDTrX/safe-travels"><i
-                  class="fa-brands link fa-github"></i></a>
+        <img src="images/safiri.png" width="100%">
+      </div>
+      <div class="info right slide">
+        <div class="desc">
+          <div class="title">
+            <h1>SAFIRI</h1>
+            <a target="_blank" href="https://github.com/MaDTrX/safe-travels"><i
+                class="fa-brands link fa-github"></i></a>
 
-              <a target="_blank" href="https://safetravelsapp.herokuapp.com"><i class="fa-solid  link fa-link"></i></a>
-            </div>
-            <p class="details">A traveling app that allows users to plan their trip with ease.
-              Keep your adventures organized by logging checklists, flight itenaries, hotel bookings, and budget planning. 
-              Powered by Amadeus API & Google Places API. </p>
-            <div class="stack">
-              <i class="fa-brands tech fa-bootstrap"></i>
-              <i class="fa-brands tech fa-node-js"></i>
-              <i class="fa-brands tech fa-js"></i>
-            </div>
+            <a target="_blank" href="https://safetravelsapp.herokuapp.com"><i class="fa-solid  link fa-link"></i></a>
+          </div>
+          <p class="details">A traveling app that allows users to plan their trip with ease.
+            Keep your adventures organized by logging checklists, flight itenaries, hotel bookings, and budget planning.
+            Powered by Amadeus API & Google Places API. </p>
+          <div class="stack">
+            <i class="fa-brands tech fa-bootstrap"></i>
+            <i class="fa-brands tech fa-node-js"></i>
+            <i class="fa-brands tech fa-js"></i>
           </div>
         </div>
-      </section>
-      <section id="checkers">
-        <div class="image">
-          <div class="laptop">
-            <img src="images/laptop.png" width="830px" height="490px">
-            <video id="nores" width="640" height="400" controls>
-              <source src="images/ncaa.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="phone">
-            <img src="images/phone.png" width="195px" height="438px">
-            <video id="res" width="244" height="400" controls>
-              <source src="images/demo.mp4" type="video/mp4">
-            </video>
-          </div>
+      </div>
+    </section>
+    <section id="checkers">
+      <div class="image">
+        <div class="laptop">
+          <img src="images/laptop.png" width="830px" height="490px">
+          <video id="nores" width="640" height="400" controls>
+            <source src="images/ncaa.mp4" type="video/mp4">
+          </video>
         </div>
-        <div class="preview left slide">
-          <!-- <div>
+        <div class="phone">
+          <img src="images/phone.png" width="195px" height="438px">
+          <video id="res" width="244" height="400" controls>
+            <source src="images/demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="preview left slide">
+        <!-- <div>
             <button  id="mobile">MOBILE DEMO</button>
             <button id="desktop">DESKTOP DEMO</button>
           </div> -->
-          <img src="images/checkers.png" width="100%">
-        </div>
-        <div class="info right slide">
-          <div class="desc">
-            <div class="title">
-              <h1>CHECKERS</h1>
-              <a target="_blank" href="https://github.com/MaDTrX/checkers"><i class="fa-brands link fa-github"></i></a>
+        <img src="images/checkers.png" width="100%">
+      </div>
+      <div class="info right slide">
+        <div class="desc">
+          <div class="title">
+            <h1>CHECKERS</h1>
+            <a target="_blank" href="https://github.com/MaDTrX/checkers"><i class="fa-brands link fa-github"></i></a>
 
-              <a target="_blank" href="https://madtrx.github.io/Checkers/"><i class="fa-solid  link fa-link"></i></a>
-            </div>
-            <p class="details">An online version of the classic game of Checkers built using SocketIO and JQuery.
-              The game implements a chat functionality for users who play against each other.
-              The website features local and online player vs. player. </p>
-            <div class="stack">
-              <i class="fa-brands tech fa-html5"></i>
-              <i class="fa-brands tech fa-css3"></i>
-              <i class="fa-brands tech fa-js"></i>
-            </div>
+            <a target="_blank" href="https://madtrx.github.io/Checkers/"><i class="fa-solid  link fa-link"></i></a>
+          </div>
+          <p class="details">An online version of the classic game of Checkers built using SocketIO and JQuery.
+            The game implements a chat functionality for users who play against each other.
+            The website features local and online player vs. player. </p>
+          <div class="stack">
+            <i class="fa-brands tech fa-html5"></i>
+            <i class="fa-brands tech fa-css3"></i>
+            <i class="fa-brands tech fa-js"></i>
           </div>
         </div>
-      </section>
-      <section id="grubs">
-        <div class="image">
-          <div class="laptop">
-            <img src="images/laptop.png" width="830px" height="490px">
-            <video id="nores" width="640" height="400" controls>
-              <source src="images/ncaa.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="phone">
-            <img src="images/phone.png" width="195px" height="438px">
-            <video id="res" width="244" height="400" controls>
-              <source src="images/demo.mp4" type="video/mp4">
-            </video>
-          </div>
+      </div>
+    </section>
+    <section id="grubs">
+      <div class="image">
+        <div class="laptop">
+          <img src="images/laptop.png" width="830px" height="490px">
+          <video id="nores" width="640" height="400" controls>
+            <source src="images/ncaa.mp4" type="video/mp4">
+          </video>
         </div>
-        <div class="preview left slide">
-          <!-- <div>
+        <div class="phone">
+          <img src="images/phone.png" width="195px" height="438px">
+          <video id="res" width="244" height="400" controls>
+            <source src="images/demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="preview left slide">
+        <!-- <div>
             <button  id="mobile">MOBILE DEMO</button>
             <button id="desktop">DESKTOP DEMO</button>
           </div> -->
-          <img src="images/upforgrubs.png" width="100%">
-        </div>
-        <div class="info right slide">
-          <div class="desc">
-            <div class="title">
-              <h1>UP4GRUBZ</h1>
-              <a target="_blank" href="https://github.com/MaDTrX/Up4Grubs"><i class="fa-brands link fa-github"></i></a>
+        <img src="images/upforgrubs.png" width="100%">
+      </div>
+      <div class="info right slide">
+        <div class="desc">
+          <div class="title">
+            <h1>UP4GRUBZ</h1>
+            <a target="_blank" href="https://github.com/MaDTrX/Up4Grubs"><i class="fa-brands link fa-github"></i></a>
 
-              <a target="_blank" href="https://up4grubz.herokuapp.com"><i class="fa-solid  link fa-link"></i></a>
-            </div>
-            <p class="details">This full CRUD app was created with the mission to eliminate food waste. Users
-              can login to post their
-              extra and/or about-to-expire food so that other users can claim them. Everyone is welcome to browse a list of the
-              posted grubs but they must be logged-in to post or claim grubs.
-              The app utilizes the google places markers API to display a map with the location of posted
-              grubs.
-              Users can add and delete multiple photos of posted grubs.
-              Photos are stored and deleted in S3 buckets based on user activity.</p>
-            <div class="stack">
-              <i class="fa-brands fa-aws tech"></i>
-              <i class="fa-brands fa-python tech"></i>
-              <i class="fa-brands tech fa-js"></i>
-            </div>
+            <a target="_blank" href="https://up4grubz.herokuapp.com"><i class="fa-solid  link fa-link"></i></a>
+          </div>
+          <p class="details">This full CRUD app was created with the mission to eliminate food waste. Users
+            can login to post their
+            extra and/or about-to-expire food so that other users can claim them. Everyone is welcome to browse a list
+            of the
+            posted grubs but they must be logged-in to post or claim grubs.
+            The app utilizes the google places markers API to display a map with the location of posted
+            grubs.
+            Users can add and delete multiple photos of posted grubs.
+            Photos are stored and deleted in S3 buckets based on user activity.</p>
+          <div class="stack">
+            <i class="fa-brands fa-aws tech"></i>
+            <i class="fa-brands fa-python tech"></i>
+            <i class="fa-brands tech fa-js"></i>
           </div>
         </div>
-      </section>
-      <section id="contact">
-        <div class="form">
-          <form id="contact-form">
-            <input type="hidden" name="contact_number">
-            <div class="row">
-              <div class="col-25">
-                <label for="name">Name</label>
-              </div>
-              <div class="col-75">
-                <input type="text" id="name" name="from_name" placeholder="Your name..">
-              </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="form">
+        <form id="contact-form">
+          <input type="hidden" name="contact_number">
+          <div class="row">
+            <div class="col-25">
+              <label for="name">Name</label>
             </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="email">Email</label>
-              </div>
-              <div class="col-75">
-                <input type="text" id="email" name="from_email" placeholder="Your Email..">
-              </div>
+            <div class="col-75">
+              <input type="text" id="name" name="from_name" placeholder="Your name..">
             </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="message">Message</label>
-              </div>
-              <div class="col-75">
-                <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
-              </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email</label>
             </div>
-            <br>
-            <div class="row">
-              <input type="submit" value="Submit">
+            <div class="col-75">
+              <input type="text" id="email" name="from_email" placeholder="Your Email..">
             </div>
-          </form>
-        </div>
-      </section>
-    </main>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="message">Message</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
   </div>
 </body>
 

@@ -5,6 +5,7 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 .container {
@@ -112,17 +113,15 @@ a {
   }
 }
 
-#navigation > div {
-  width: 25%;
-  text-align: center;
-}
-
-#hamburger {
-  z-index: 1;
+#open {
+  display: none;
 }
 
 @media only screen and (max-width: 900px) {
-  #hamburger {
+  #open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: absolute;
     top: 20px;
     right: 25px;
@@ -130,6 +129,58 @@ a {
     font-size: 25px;
     color: #a13333;
   }
+}
+
+#close {
+  font-size: 30px;
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  z-index: 3;
+  color: #a13333;
+}
+
+@media only screen and (min-width: 900px) {
+  #close {
+    opacity: 0;
+  }
+}
+
+#mobile-nav {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: absolute;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  background: rgba(220, 220, 220, 0.938);
+  opacity: 0;
+  z-index: 2;
+  border-left: 2px solid #a13333;
+}
+
+#mobile-nav.responsive {
+  right: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+@media only screen and (min-width: 900px) {
+  #mobile-nav.responsive {
+    opacity: 0;
+  }
+}
+
+#navigation > div {
+  width: 25%;
+  text-align: center;
 }
 
 .dropdown {
@@ -172,6 +223,20 @@ h3,
 h1 {
   text-align: center;
   letter-spacing: 5px;
+}
+
+h4 {
+  color: black;
+  margin: 5px 0 0 0;
+  padding-bottom: 0;
+  letter-spacing: 5px;
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #a13333;
 }
 
 #landing {
@@ -301,7 +366,8 @@ i > span {
           transform: translateX(50%);
 }
 
-.left, .right {
+.left,
+.right {
   -webkit-transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
   transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
   transition: opacity 250ms ease-in, transform 400ms ease-in;
@@ -309,7 +375,8 @@ i > span {
   opacity: 0;
 }
 
-.left.appear, .right.appear {
+.left.appear,
+.right.appear {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   opacity: 1;
@@ -325,7 +392,9 @@ i > span {
   margin-bottom: 20px;
 }
 
-.title, .stack, p {
+.title,
+.stack,
+p {
   width: 80%;
   margin: 0 auto;
 }
@@ -388,7 +457,9 @@ p {
   margin: 10px;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: none;
@@ -405,7 +476,8 @@ label {
   color: whitesmoke;
 }
 
-input[type=submit], button {
+input[type=submit],
+button {
   background-color: #04AA6D;
   color: black;
   padding: 12px 20px;
@@ -416,7 +488,8 @@ input[type=submit], button {
   font-weight: 600;
 }
 
-input[type=submit]:hover, button:hover {
+input[type=submit]:hover,
+button:hover {
   background-color: #ca3e47;
 }
 
