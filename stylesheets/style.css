@@ -175,7 +175,6 @@ a {
   opacity: 0;
   z-index: 2;
   border-bottom: 5px solid #a13333;
-  margin-top: 60px;
   letter-spacing: 3px;
 }
 
@@ -187,7 +186,7 @@ a {
 }
 
 #mobile-nav > a:hover {
-  color: #848282;
+  color: #ffffff;
   letter-spacing: 5px;
   font-size: 20px;
 }

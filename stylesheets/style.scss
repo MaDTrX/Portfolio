@@ -146,7 +146,6 @@ a {
   opacity: 0;
   z-index: 2;
   border-bottom: 5px solid #a13333;
-  margin-top: 60px;
   letter-spacing: 3px;
 
 }
@@ -157,7 +156,7 @@ a {
   height: 20px;
 }
 #mobile-nav > a:hover  {
-  color: #848282;
+  color: #ffffff;
   letter-spacing: 5px;
   font-size: 20px;
 }
@@ -197,7 +196,7 @@ a {
   background-color: rgb(4, 3, 3);
   width: 50%;
   border: 2px solid rgb(161, 51, 51);
-  // z-index: 1;
+;
 }
 
 .dropdown:hover .dropdown-content {
