@@ -25,15 +25,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 60px);
     scroll-snap-align: start;
     scroll-margin-top: 60px;
     @media only screen and (max-width: $smmd) {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      scroll-margin-top: 60px;
     }
 
 
@@ -45,6 +42,8 @@ body {
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
+      height: calc(100vh);
+      
       ;
 
     }
@@ -74,7 +73,8 @@ body {
     }
 
     &:nth-of-type(8) {
-      background-color: rgb(4, 3, 3)
+      background-color: rgb(4, 3, 3);
+      margin: auto;
     }
   }
 }
@@ -94,7 +94,7 @@ a {
   position: fixed;
   top: 0;
   height: 60px;
-  z-index: 1;
+  z-index: 2;
   color: rgb(161, 51, 51);
   letter-spacing: 2px;
   font-weight: 600;
@@ -504,7 +504,7 @@ button:hover {
   width: 50%;
   @media only screen and (max-width: $smmd) {
     width: 80%;
-    
+    margin-bottom: 120px;
   }
 }
 
