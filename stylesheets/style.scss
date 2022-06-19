@@ -18,7 +18,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  
+
   section {
     z-index: -1;
     display: flex;
@@ -28,6 +28,7 @@ body {
     height: calc(100vh - 60px);
     scroll-snap-align: start;
     scroll-margin-top: 60px;
+
     @media only screen and (max-width: $smmd) {
       display: flex;
       flex-direction: column;
@@ -43,7 +44,7 @@ body {
       justify-content: flex-start;
       flex-direction: column;
       height: calc(100vh);
-      
+
       ;
 
     }
@@ -80,10 +81,10 @@ body {
 }
 
 a {
-  color: rgb(161, 51, 51);
-  margin: auto;
+  color: #a13333;
   text-decoration: none;
 }
+
 
 #navigation {
   width: 100vw;
@@ -107,6 +108,7 @@ a {
 
 #open {
   display: none;
+
   @media only screen and (max-width: $smmd) {
     display: flex;
     position: absolute;
@@ -139,13 +141,24 @@ a {
   position: absolute;
   display: none;
   flex-direction: column;
-  width: 50%;
-  height: 100vh;
-  background: rgba(220, 220, 220, 0.938);
+  width: 100%;
+  background: rgb(4, 3, 3);
   opacity: 0;
   z-index: 2;
-  border-left: 2px solid rgb(161, 51, 51);
+  border-bottom: 5px solid #a13333;
+  letter-spacing: 3px;
 
+}
+#mobile-nav > a  {
+  color: #a13333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 20px;
+}
+#mobile-nav > a:hover  {
+  color: #ffffff;
+  letter-spacing: 5px;
+  font-size: 20px;
 }
 
 #mobile-nav.responsive {
@@ -157,6 +170,7 @@ a {
     opacity: 0;
   }
 }
+
 #hamburger {
   width: 100vw;
   height: 60px;
@@ -166,7 +180,7 @@ a {
   z-index: 1;
 }
 
-#navigation > div {
+#navigation>div {
   width: 25%;
   text-align: center;
 }
@@ -182,7 +196,7 @@ a {
   background-color: rgb(4, 3, 3);
   width: 50%;
   border: 2px solid rgb(161, 51, 51);
-  // z-index: 1;
+;
 }
 
 .dropdown:hover .dropdown-content {
@@ -195,7 +209,7 @@ button {
   letter-spacing: .5px;
 }
 
-button > i {
+button>i {
   padding-left: 10px;
   font-size: 1rem;
   color: black;
@@ -206,26 +220,11 @@ h1 {
   text-align: center;
   letter-spacing: 5px;
 }
+
 h1 {
   @media only screen and (max-width: $smmd) {
     letter-spacing: 0;
   }
-}
-
-
-h4 {
-  color: black;
-  margin: 5px 0 0 0;
-  padding-bottom: 0;
-  letter-spacing: 5px;
-
-}
-
-hr {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(161, 51, 51)
 }
 
 #landing {
@@ -236,7 +235,7 @@ hr {
 
 }
 
-#landing > button {
+#landing>button {
   margin: 5px;
 }
 
@@ -255,31 +254,32 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+
   @media only screen and (max-width: $smmd) {
     width: 80%;
     height: auto;
-    margin-bottom: 4%; 
+    margin-bottom: 4%;
     margin-left: 0;
-    
-}
+
+  }
 }
 
-div > img {
+div>img {
   padding: 0;
 }
 
-i > span {
+i>span {
   font-size: 1rem;
 }
 
-#skills > div {
+#skills>div {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
 }
 
-.skill > p {
+.skill>p {
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
@@ -299,9 +299,10 @@ i > span {
   margin-top: 25px;
   width: 50%;
   border-bottom: 2px solid rgb(161, 51, 51);
-    @media only screen and (max-width: $smmd) {
-      width: 80%;
-      margin-top: 40px
+
+  @media only screen and (max-width: $smmd) {
+    width: 80%;
+    margin-top: 40px
   }
 }
 
@@ -309,27 +310,30 @@ i > span {
   width: 50%;
   margin-right: -4%;
   z-Index: 1;
+
   @media only screen and (max-width: $smmd) {
     width: 80%;
     margin-top: 4%;
     margin-right: 0;
 
   }
-  
+
 }
 
-.preview > div {
+.preview>div {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 5px;
+
   @media only screen and (max-width: $smmd) {
     width: 100%;
     display: flex;
 
   }
 }
-.preview > div > button {
+
+.preview>div>button {
   @media only screen and (min-width: $smmd) {
     width: 50%;
     margin-right: -15%;
@@ -397,6 +401,7 @@ p {
   font-family: 'Times New Roman', Times, serif;
   font-size: 1rem;
   width: 100%;
+
   @media only screen and (max-width: $smmd) {
     font-size: 14px;
   }
@@ -419,6 +424,7 @@ p {
   flex-direction: column;
   justify-content: center;
   margin-left: 15%;
+
   @media only screen and (max-width: $smmd) {
     width: 80%;
     height: 100%;
@@ -431,22 +437,25 @@ p {
   text-align: center;
 }
 
-.title > a {
+.title>a {
   font-size: 3rem;
   color: #04AA6D;
   letter-spacing: 10px;
+
   @media only screen and (max-width: $smmd) {
     font-size: 2rem;
   }
 }
 
-.title > a:hover {
+.title>a:hover {
   color: rgb(202, 62, 71);
 }
 
-.title > h1 {
+.title>h1 {
   font-size: 2rem;
   letter-spacing: 5px;
+  margin: 0;
+
   @media only screen and (max-width: $smmd) {
     font-size: 1.5rem;
   }
@@ -455,6 +464,7 @@ p {
 .tech {
   font-size: 3rem;
   margin: 10px;
+
   @media only screen and (max-width: $smmd) {
     font-size: 2rem;
   }
@@ -502,6 +512,7 @@ button:hover {
   background-color: rgb(43, 43, 43);
   padding: 20px;
   width: 50%;
+
   @media only screen and (max-width: $smmd) {
     width: 80%;
     margin-bottom: 120px;
@@ -529,6 +540,7 @@ button:hover {
 
 ::-webkit-scrollbar {
   width: 20px;
+
   @media only screen and (max-width: $smmd) {
     width: 0;
   }
