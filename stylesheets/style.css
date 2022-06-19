@@ -211,7 +211,17 @@ a {
   background-color: #040303;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  #hamburger {
+    border-bottom: 2px solid #a13333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 #navigation > div {
@@ -368,7 +378,7 @@ i > span {
 @media only screen and (max-width: 900px) {
   #me {
     width: 80%;
-    margin-top: 40px;
+    margin-top: 30%;
   }
 }
 
@@ -600,7 +610,7 @@ button:hover {
   .form {
     width: 80%;
     margin-bottom: 120px;
-    z-index: 2;
+    z-index: 1;
   }
 }
 
