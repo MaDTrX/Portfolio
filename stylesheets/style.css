@@ -45,13 +45,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    scroll-margin-top: 60px;
   }
 }
 
@@ -70,6 +63,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: calc(100vh);
 }
 
 .container section:nth-of-type(2) {
@@ -98,6 +92,7 @@ body {
 
 .container section:nth-of-type(8) {
   background-color: #040303;
+  margin: auto;
 }
 
 a {
@@ -584,6 +579,7 @@ button:hover {
 @media only screen and (max-width: 900px) {
   .form {
     width: 80%;
+    margin-bottom: 120px;
   }
 }
 

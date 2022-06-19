@@ -31,9 +31,6 @@ body {
     @media only screen and (max-width: $smmd) {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      scroll-margin-top: 60px;
     }
 
 
@@ -45,6 +42,8 @@ body {
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
+      height: calc(100vh);
+      
       ;
 
     }
@@ -74,7 +73,8 @@ body {
     }
 
     &:nth-of-type(8) {
-      background-color: rgb(4, 3, 3)
+      background-color: rgb(4, 3, 3);
+      margin: auto;
     }
   }
 }
@@ -504,7 +504,7 @@ button:hover {
   width: 50%;
   @media only screen and (max-width: $smmd) {
     width: 80%;
-    
+    margin-bottom: 120px;
   }
 }
 
