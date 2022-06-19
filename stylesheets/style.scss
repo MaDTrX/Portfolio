@@ -8,6 +8,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: white;
   overflow-x: hidden;
+  background-color: rgb(4, 3, 3);
 }
 
 .container {
@@ -216,12 +217,20 @@ button>i {
 }
 
 h3,
-h1 {
+h1 { 
   text-align: center;
   letter-spacing: 5px;
+  margin: 0;
+  font-weight: 900;
 }
+h2 {
+  letter-spacing: 5px;
+  border-bottom: 2px solid rgb(161, 51, 51);
+  margin-top: 5px;
+} 
 
-h1 {
+
+h1, h2 {
   @media only screen and (max-width: $smmd) {
     letter-spacing: 0;
   }
@@ -299,11 +308,22 @@ i>span {
   margin-top: 25px;
   width: 50%;
   border-bottom: 2px solid rgb(161, 51, 51);
+  text-align: center;
 
   @media only screen and (max-width: $smmd) {
     width: 80%;
     margin-top: 40px
   }
+}
+#me > p {
+  margin-bottom: 25px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+#me > img {
+  margin: auto;
+  border-radius: 50%;
 }
 
 .preview {

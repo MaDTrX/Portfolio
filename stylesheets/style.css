@@ -6,6 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: white;
   overflow-x: hidden;
+  background-color: #040303;
 }
 
 .container {
@@ -256,10 +257,18 @@ h3,
 h1 {
   text-align: center;
   letter-spacing: 5px;
+  margin: 0;
+  font-weight: 900;
+}
+
+h2 {
+  letter-spacing: 5px;
+  border-bottom: 2px solid #a13333;
+  margin-top: 5px;
 }
 
 @media only screen and (max-width: 900px) {
-  h1 {
+  h1, h2 {
     letter-spacing: 0;
   }
 }
@@ -353,6 +362,7 @@ i > span {
   margin-top: 25px;
   width: 50%;
   border-bottom: 2px solid #a13333;
+  text-align: center;
 }
 
 @media only screen and (max-width: 900px) {
@@ -360,6 +370,17 @@ i > span {
     width: 80%;
     margin-top: 40px;
   }
+}
+
+#me > p {
+  margin-bottom: 25px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+#me > img {
+  margin: auto;
+  border-radius: 50%;
 }
 
 .preview {
@@ -579,6 +600,7 @@ button:hover {
   .form {
     width: 80%;
     margin-bottom: 120px;
+    z-index: 2;
   }
 }
 
