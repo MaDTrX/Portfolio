@@ -31,7 +31,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 60px);
   scroll-snap-align: start;
   scroll-margin-top: 60px;
 }
@@ -97,7 +97,6 @@ body {
 
 a {
   color: #a13333;
-  margin: auto;
   text-decoration: none;
 }
 
@@ -116,7 +115,7 @@ a {
   position: fixed;
   top: 0;
   height: 60px;
-  z-index: 1;
+  z-index: 2;
   color: #a13333;
   letter-spacing: 2px;
   font-weight: 600;
@@ -171,12 +170,26 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
-  height: 100vh;
-  background: rgba(220, 220, 220, 0.938);
+  width: 100%;
+  background: #040303;
   opacity: 0;
   z-index: 2;
-  border-left: 2px solid #a13333;
+  border-bottom: 5px solid #a13333;
+  margin-top: 60px;
+  letter-spacing: 3px;
+}
+
+#mobile-nav > a {
+  color: #a13333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 20px;
+}
+
+#mobile-nav > a:hover {
+  color: #848282;
+  letter-spacing: 5px;
+  font-size: 20px;
 }
 
 #mobile-nav.responsive {
@@ -250,20 +263,6 @@ h1 {
   h1 {
     letter-spacing: 0;
   }
-}
-
-h4 {
-  color: black;
-  margin: 5px 0 0 0;
-  padding-bottom: 0;
-  letter-spacing: 5px;
-}
-
-hr {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #a13333;
 }
 
 #landing {
@@ -514,6 +513,7 @@ p {
 .title > h1 {
   font-size: 2rem;
   letter-spacing: 5px;
+  margin: 0;
 }
 
 @media only screen and (max-width: 900px) {
