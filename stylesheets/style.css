@@ -273,7 +273,7 @@ h1 {
 
 h2 {
   letter-spacing: 5px;
-  border-bottom: 2px solid #a13333;
+  border-bottom: 2px solid #04AA6D;
   margin-top: 5px;
 }
 
@@ -371,7 +371,7 @@ i > span {
 #me {
   margin-top: 25px;
   width: 50%;
-  border-bottom: 2px solid #a13333;
+  border-bottom: 2px solid #04AA6D;
   text-align: center;
 }
 
@@ -568,7 +568,7 @@ textarea {
   width: 100%;
   padding: 12px;
   border: none;
-  border-bottom: 5px solid #ca3e47;
+  border-bottom: 5px solid #04AA6D;
   background-color: #4a4949;
   resize: vertical;
   color: azure;
