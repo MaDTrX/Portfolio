@@ -8,6 +8,7 @@ const hamburger = document.getElementById('open')
 const close = document.getElementById('close')
 const mobileNav = document.getElementById('mobile-nav')
 const links = document.querySelectorAll('a')
+const submit = document.getElementById('submission')
 const appearOptions = {
     threshold: 0,
     rootMargin: '0px 0px -250px 0px'
@@ -61,5 +62,10 @@ links.forEach(link => {
         close.style.display = 'none'
         hamburger.style.display = 'flex'
     })
+})
+
+submit.addEventListener('click', () => {
+    // submit.setAttribute('disabled', '')
+    submit.style.display = 'none'
 })
 
