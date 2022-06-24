@@ -69,3 +69,8 @@ submit.addEventListener('click', () => {
 })
 
 
+submit.addEventListener('click', () => {
+    // submit.setAttribute('disabled', '')
+    submit.style.display = 'none'
+})
+
