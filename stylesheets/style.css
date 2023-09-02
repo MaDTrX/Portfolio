@@ -3,7 +3,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   overflow-x: hidden;
   background-color: #040303;
@@ -14,7 +14,7 @@ body {
   height: 100%;
   background-color: #040303;
   -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -26,11 +26,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: calc(100vh - 60px);
   scroll-snap-align: start;
@@ -44,8 +44,8 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -58,12 +58,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: calc(100vh);
 }
 
@@ -108,11 +108,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: fixed;
   top: 0;
   height: 60px;
@@ -169,8 +169,8 @@ a {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
   background: #040303;
   opacity: 0;
@@ -195,7 +195,7 @@ a {
 #mobile-nav.responsive {
   right: 0;
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
   opacity: 1;
 }
 
@@ -236,10 +236,26 @@ a {
 .dropdown-content {
   display: none;
   position: absolute;
-  left: 25%;
+  left: 20%;
   background-color: #040303;
-  width: 50%;
+  width: 60%;
   border: 2px solid #a13333;
+}
+
+.dropdown-content > div {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-content > div:hover {
+  background-color: #302c2c;
+}
+
+a:hover {
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -248,13 +264,13 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 button {
   font-size: 12px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 button > i {
@@ -273,12 +289,13 @@ h1 {
 
 h2 {
   letter-spacing: 5px;
-  border-bottom: 2px solid #04AA6D;
+  border-bottom: 2px solid #04aa6d;
   margin-top: 5px;
 }
 
 @media only screen and (max-width: 900px) {
-  h1, h2 {
+  h1,
+  h2 {
     letter-spacing: 0;
   }
 }
@@ -290,8 +307,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #landing > button {
@@ -307,7 +324,7 @@ h2 {
 .info {
   padding: 10px;
   -webkit-box-shadow: 0 4px 11px 1px rgba(0, 0, 0, 0.459);
-          box-shadow: 0 4px 11px 1px rgba(0, 0, 0, 0.459);
+  box-shadow: 0 4px 11px 1px rgba(0, 0, 0, 0.459);
   width: 50%;
   height: 80%;
   border-radius: 30px;
@@ -317,11 +334,11 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 900px) {
@@ -346,18 +363,18 @@ i > span {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .skill > p {
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 30px;
   color: #c8c8c8;
 }
@@ -371,7 +388,7 @@ i > span {
 #me {
   margin-top: 40px;
   width: 50%;
-  border-bottom: 2px solid #04AA6D;
+  border-bottom: 2px solid #04aa6d;
   text-align: center;
 }
 
@@ -395,7 +412,7 @@ i > span {
 .preview {
   width: 50%;
   margin-right: -4%;
-  z-Index: 1;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 900px) {
@@ -412,8 +429,8 @@ i > span {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   margin-bottom: 5px;
 }
 
@@ -441,12 +458,12 @@ i > span {
 
 .left {
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .right {
   -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  transform: translateX(50%);
 }
 
 .left,
@@ -454,14 +471,15 @@ i > span {
   -webkit-transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
   transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
   transition: opacity 250ms ease-in, transform 400ms ease-in;
-  transition: opacity 250ms ease-in, transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in,
+    -webkit-transform 400ms ease-in;
   opacity: 0;
 }
 
 .left.appear,
 .right.appear {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
   opacity: 1;
 }
 
@@ -473,7 +491,7 @@ p {
 }
 
 p {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1rem;
   width: 100%;
 }
@@ -502,11 +520,11 @@ p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: 15%;
 }
 
@@ -525,7 +543,7 @@ p {
 
 .title > a {
   font-size: 3rem;
-  color: #04AA6D;
+  color: #04aa6d;
   letter-spacing: 10px;
 }
 
@@ -562,13 +580,13 @@ p {
   }
 }
 
-input[type=text],
+input[type="text"],
 select,
 textarea {
   width: 100%;
   padding: 12px;
   border: none;
-  border-bottom: 5px solid #04AA6D;
+  border-bottom: 5px solid #04aa6d;
   background-color: #4a4949;
   resize: vertical;
   color: azure;
@@ -581,9 +599,9 @@ label {
   color: whitesmoke;
 }
 
-input[type=submit],
+input[type="submit"],
 button {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: black;
   padding: 12px 20px;
   border: none;
@@ -593,7 +611,7 @@ button {
   font-weight: 600;
 }
 
-input[type=submit]:hover,
+input[type="submit"]:hover,
 button:hover {
   background-color: #ca3e47;
 }
